@@ -1,0 +1,159 @@
+Remove "View on Google Scholar" i have no need of this.
+Data of Faculty Members are below listed:
+
+Syed Perwaiz Asdaque:-
+Designation: Director
+Education: Not Avalible for Now.
+Email: info@kinpoe.edu.pk
+Research Area: Not Avalible for Now.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Zafer Ahmed Siddiqui:-
+Designation: Registrar (KINPOE-C)
+Education: MS (ELECTRICAL ENGINEERING)
+Email: zafer.ahmed@kinpoe.edu.pk
+Research Area: Not Avalible for Now.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Dr. Rizwan Ahmed:-
+Designation: Manager (ORIC)
+Education: Not Avalible for Now.
+Email: info@kinpoe.edu.pk
+Research Area: Reactor Physics, Fuel Management.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Muhammad Arif Abdul Karim:-
+Designation: Manager (ISS)
+Education: B.E (Electronics)
+Email: Karim79121@hotmail.com
+Research Area: Not Avalible for Now.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Dr. Nadeem Ahsan:-
+Designation: Manager (IT & CS)
+Education: PhD - Institute for Software Technology, TUG, Graz, Austria.
+Email: Not Avalible for Now
+Research Area: Software Engineering, Machine Learning, Mining Software Repositories.
+Publications:-
+1. Automatic software bug triage system (bts) based on latent semantic indexing and support vector machine. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NHHRRIAAAAAJ&citation_for_view=NHHRRIAAAAAJ:9yKSN-GCB0IC")
+2. Structure of fluxed sinter. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NHHRRIAAAAAJ&citation_for_view=NHHRRIAAAAAJ:pyW8ca7W8N0C")
+3. Improved routing metrics for energy constrained interconnected devices in low-power and lossy networks. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NHHRRIAAAAAJ&citation_for_view=NHHRRIAAAAAJ:CHSYGLWDkRkC")
+4. Data throughput improvement in IS2000 networks via effective F-SCH reduced active set pilot switching. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NHHRRIAAAAAJ&citation_for_view=NHHRRIAAAAAJ:qxL8FJ1GzNcC")
+5. System and method for edge of coverage detection in a wireless communication device. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=NHHRRIAAAAAJ&citation_for_view=NHHRRIAAAAAJ:Zph67rFs4hoC")
+Create a Button: Show More(href="https://scholar.google.com/citations?hl=en&user=NHHRRIAAAAAJ")
+
+Dr. Jawed Akhtar Bhutto:-
+Designation: Manager (QA)
+Education: PhD Electrical Engineering - NUST, Islamabad.
+Email: info@kinpoe.edu.pk
+Research Area: Power Engineering & Control Engineering.
+Publication:-
+1: Trade-off between the H2 and H(infinite) in the Multi-Objective State Feedback Synthesis through LMI characterizations.
+2: Synthesis of Robust Performance of Active Suspension Control of Vehicle with Parametric uncertainty.
+3: Analysis of robust performance of active suspension control of vehicle with polytopic uncertainty.
+4: Robust Performance Control Synthesis of Smart Structural System with Limited Input.
+5: Robust optimal active vibration control of smart structures using convex optimization.
+Create a Button: Show More(href="#")
+
+Atiq ur Rehman:-
+Designation: Manager (Basic Training)
+Education: Not Avalible for Now.
+Email: Not Avalible for Now.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Dr. Abdul Rehman Abbasi:-
+Designation: Manager (Academic)
+Education: PhD (Mechatronics)
+Email: areahman.abbasi@kinpoe.edu.pk
+Publications:-
+1. Towards development of a low cost early fire detection system using wireless sensor network and machine vision. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nCcP5vcAAAAJ&citation_for_view=nCcP5vcAAAAJ:9yKSN-GCB0IC")
+2. Power flow & voltage stability analyses and remedies for a 340 MW nuclear power plant using ETAP. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nCcP5vcAAAAJ&citation_for_view=nCcP5vcAAAAJ:roLk4NBRz8UC")
+3. Detecting & interpreting self-manipulating hand movements for student’s affect prediction. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nCcP5vcAAAAJ&citation_for_view=nCcP5vcAAAAJ:0EnyYjriUFMC")
+4. Student mental state inference from unintentional body gestures using dynamic Bayesian networks. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nCcP5vcAAAAJ&citation_for_view=nCcP5vcAAAAJ:LkGwnXOMwfcC")
+5. Towards knowledge-based affective interaction: situational interpretation of affect. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=nCcP5vcAAAAJ&citation_for_view=nCcP5vcAAAAJ:UeHWp8X0CEIC")
+Create a Button: Show More(href="https://scholar.google.com/citations?hl=en&user=nCcP5vcAAAAJ")
+
+Dr. Zahra Ali:-
+Designation: Professor
+Education: PhD Plasma Physics - UTM, Malaysia.
+Email: zahra.ali@paec.gov.pk
+Research Area: Plasma Physics, Reactor Core Modeling, Fusion Research.
+Publications:-
+1. Radiation Self Absorption Effect in Ar Gas Nx2 Mather Type Plasma Focus.
+2. Numerical Experiments for Radial Dynamics and Opacity Effect in Argon Plasma Focus.
+Create a Button: Show More(href="#")
+
+Dr. Salman Ahmed Khan:-
+Designation: Section Head (Cyber Security)
+Education: PhD
+Email: info@kinpoe.edu.pk
+Research Area: Nano Science, Nanotechnology
+Publications:- 
+1. A Facile, Cost Effective, Patterned ZnO Microwires Synthesis for Large-Scale Fabrication of Piezoelectric-Generator.
+Create a Button: Show More(href="#")
+
+Dr. Khurram Kafeel:-
+Designation: Section Head (C&PC)
+Education: PhD (Mechanical Engineering) - The University of Manchester, UK.
+Email: khurram464@hotmail.com
+Research Area: Computational Fluid Dynamics, Numerical Simulation, Multiphase flow, Heat transfer, Mass transfer
+Publications:-
+1. Simulation of the response of a thermosyphon under pulsed heat input conditions. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBmZv5YAAAAJ&citation_for_view=eBmZv5YAAAAJ:u-x6o8ySG0sC")
+2. Axi-symmetric simulation of a two phase vertical thermosyphon using Eulerian two-fluid methodology. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBmZv5YAAAAJ&citation_for_view=eBmZv5YAAAAJ:u5HHmVD_uO8C")
+3. Modelling and simulation of two-phase closed thermosyphones using two-fluid method. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBmZv5YAAAAJ&citation_for_view=eBmZv5YAAAAJ:d1gkVwhDpl0C")
+4. CFD simulation of air ventilated spent fuel cask design for PWR fuel assemblies. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBmZv5YAAAAJ&citation_for_view=eBmZv5YAAAAJ:9yKSN-GCB0IC")
+5. CFD simulation of air ventilated spent fuel cask design for PWR fuel assemblies. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=eBmZv5YAAAAJ&citation_for_view=eBmZv5YAAAAJ:2osOgNQ5qMEC")
+Create a Button: Show More(href="https://scholar.google.com/citations?user=eBmZv5YAAAAJ&hl=en")
+
+Dr. Adeel Abbas:-
+Designation: Professor
+Education: PhD (Energy & IT) - Vienna University of Technology, Austria,
+Email: adeel.abbas@paec.gov.pk
+Research Area: Microgrids - Demand Side Management
+Publications:-
+1. Experimental Testing of Observers Comprising Discrete Kalman Filter and High-Gain Observers.
+2. A Hidden Markov Model Based Procedure for Identifying Household Electric Loads.
+3. Load Recognition for Automated Demand Response in Microgrids.
+4. Automated Demand Side Management in Microgrids Using Load Recognition.
+5. Automatic Electric Load Identification in Self-Configuring Microgrids.
+Create a Button: Show More(href="#")
+
+Dr. Naveen Masood:-
+Designation: Section Head (IT)
+Education: PhD - Bahria University, Karachi, Pakistan
+Email: student.bahria.edu.pk
+Research Area: Brain Computer Interfacing, Machine Learning, EEG Signal Processing
+Publications:-
+1. Investigating EEG Patterns for Dual-Stimuli Induced Human Fear Emotional State. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QpT4nQYAAAAJ&citation_for_view=QpT4nQYAAAAJ:_Qo2XoVZTnwC")
+2. Selection of EEG channels based on spatial filter weights. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QpT4nQYAAAAJ&citation_for_view=QpT4nQYAAAAJ:hFOr9nPyWt4C")
+3. Comparing Neural Correlates of Human Emotions across Multiple Stimulus Presentation Paradigms. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QpT4nQYAAAAJ&citation_for_view=QpT4nQYAAAAJ:j3f4tGmQtD8C")
+4. Emotiv-based low-cost brain computer interfaces: A survey. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QpT4nQYAAAAJ&citation_for_view=QpT4nQYAAAAJ:-f6ydRqryjwC")
+5. Multimodal Paradigm for Emotion Recognition Based on EEG Signals.  (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=QpT4nQYAAAAJ&citation_for_view=QpT4nQYAAAAJ:R3hNpaxXUhUC")
+Create a Button: Show More(href="https://scholar.google.com/citations?hl=en&user=QpT4nQYAAAAJ")
+
+Dr. Naila Zareen:-
+Designation: Section Head (Laboratories)
+Education: PhD (Electrical Power Engineering) - UTM, Malaysia.
+Email: dr.naila.zareen@paec.gov.pk
+Research Area: Smart Grid, Demand Side Management, Distributed Generation, Regulated & Dereglated Power System, Electrical Vehicle
+Publications:-
+1. A review of optimum DG placement based on minimization of power losses and voltage stability enhancement of distribution system. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:_kc_bZDykSQC")
+2. Grey wolf optimizer based placement and sizing of multiple distributed generation in the distribution system. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:4TOpqqG69KYC")
+3. Optimal real time cost-benefit based demand response with intermittent resources. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:Se3iqnhoufwC")
+4. Root cause analysis (RCA) of fractured ASTM A53 carbon steel pipe at oil & gas company. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:hqOjcs7Dif8C")
+5. Automatic classification of power quality disturbances: A review. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:Zph67rFs4hoC")
+Create a Button: Show More(href="https://scholar.google.com/citations?hl=en&user=klEVmXwAAAAJ")
+
+Mazhar Ali:-
+Designation: Section Head (PDTP)
+Education: Not Avalible for Now.
+Email: Not Avalible for Now.
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Note: This data is for Detailed Profile View Modal (Which appear by clicking "Read More" Button). but you can use this data to Update faculty member profile grid which is preview.
