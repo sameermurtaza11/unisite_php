@@ -4,9 +4,9 @@ $feedbackMsg = '';
 try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['qec_feedback'])) {
         // DB connection
-        $conn = @new mysqli('localhost', 'root', '', 'unisite_pdp_dp');
+        $conn = @new mysqli('localhost', 'root', '', 'kinpoe_db');
         if ($conn->connect_error) {
-            $feedbackMsg = '<span class="text-red-600">Database connection failed. Please ensure the database <b>unisite_pdp_dp</b> exists.</span>';
+            $feedbackMsg = '<span class="text-red-600">Database connection failed. Please ensure the database <b>kinpoe_dbexists.</span>';
         } else {
             // Sanitize inputs
             $name = trim($conn->real_escape_string($_POST['name'] ?? ''));

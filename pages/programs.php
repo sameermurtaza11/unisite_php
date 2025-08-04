@@ -139,7 +139,7 @@ function activeBtn($btn, $filter)
                             </div>
                             <div class="flex space-x-4">
                                 <?php if (!$deadline_passed): ?>
-                                    <a href="index.php?content_file=pages/application-form.php"
+                                    <a href="index.php?content_file=pages/apply.php"
                                         class="flex-1 bg-kinpoe-blue hover:bg-kinpoe-dark-blue text-white font-bold py-3 px-6 rounded-lg transition-all duration-300 text-center">
                                         Apply Now
                                     </a>
@@ -209,7 +209,7 @@ function activeBtn($btn, $filter)
         <h2 class="text-4xl font-bold mb-4">Ready to Apply?</h2>
         <p class="text-xl mb-8 text-blue-100">Start Your Journey — Enroll in KINPOE Today!</p>
         <div class="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="index.php?content_file=pages/application-form.php"
+            <a href="index.php?content_file=pages/apply.php"
                 class="bg-kinpoe-gold hover:bg-yellow-600 text-white font-bold py-3 px-8 rounded-lg transition-all duration-300 transform hover:scale-105">
                 Start Application
             </a>
