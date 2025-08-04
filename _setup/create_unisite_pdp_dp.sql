@@ -1,6 +1,6 @@
-CREATE DATABASE IF NOT EXISTS unisite_pdp_dp CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+CREATE DATABASE IF NOT EXISTS kinpoe_db CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
 
-USE unisite_pdp_dp;
+USE kinpoe_db;
 
 CREATE TABLE IF NOT EXISTS feedbacks (
     id INT AUTO_INCREMENT PRIMARY KEY,
