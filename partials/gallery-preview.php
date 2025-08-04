@@ -6,19 +6,29 @@
             <p class="text-xl text-gray-600">Get a glimpse of our vibrant campus and academic environment</p>
         </div>
 
+        <?php
+        // Dynamically fetch 6 random images from the Gallery folder
+        $galleryDir = __DIR__ . '/../static/media/Photos/Gallery/';
+        $allowedExtensions = ['jpg', 'jpeg', 'png', 'webp', 'gif'];
+        $images = [];
+        if (is_dir($galleryDir)) {
+            foreach (scandir($galleryDir) as $file) {
+                $ext = strtolower(pathinfo($file, PATHINFO_EXTENSION));
+                if (in_array($ext, $allowedExtensions)) {
+                    $images[] = $file;
+                }
+            }
+        }
+        if (count($images) > 6) {
+            shuffle($images);
+            $images = array_slice($images, 0, 6);
+        }
+        ?>
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4">
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0001.jpg')"></div>
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0002.jpg')"></div>
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0003.jpg')"></div>
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0004.jpg')"></div>
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0005.jpg')"></div>
-            <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
-                style="background-image: url('static/media/convocation/0006.jpg')"></div>
+            <?php foreach ($images as $img): ?>
+                <div class="aspect-square bg-cover bg-center rounded-lg hover:scale-105 transition-transform duration-300 cursor-pointer"
+                    style="background-image: url('static/media/Photos/Gallery/<?= htmlspecialchars($img) ?>')"></div>
+            <?php endforeach; ?>
         </div>
 
         <div class="text-center mt-8">

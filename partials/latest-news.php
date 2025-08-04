@@ -8,7 +8,7 @@
             summary: 'Applications are now being accepted for MS, PDTP, PGTP, and CSR programs.',
             date: '2024-01-15',
             type: 'announcement',
-            image: 'static/media/kinpoe_building.jpg',
+            image: 'static/media/Photos/Gallery/kinpoe_view.jpg',
             full: 'Admissions for MS, PDTP, PGTP, and CSR programs are now open for the academic year 2024. Please visit the Programs page for eligibility, deadlines, and application instructions. For queries, contact the Registrar office.'
         },
         {
@@ -45,7 +45,7 @@
             date: '2023-12-15',
             type: 'news',
             image: 'static/media/graduation.jpg',
-            full: 'Congratulations to our students for winning the National Engineering Competition 2023. Their project on smart grid technology was highly praised by the judges.'
+            full: 'Congratulations to our students for winning the National Engineering Competition 2023. Their project on DEAR Lab technology was highly praised by the judges.'
         }
     ],
     showModal: false,

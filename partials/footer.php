@@ -52,8 +52,8 @@
                     </div>
                     <div class="flex items-center space-x-3">
                         <i class="fas fa-phone text-kinpoe-gold"></i>
-                        <p class="text-gray-300 text-sm cursor-pointer copyable" data-copy="+92-21-9920 2777 ext: 2701, +92-21-9923 2733">
-                            +92-21-9920 2777 ext: 2701 <br> +92-21-9923 2733
+                        <p class="text-gray-300 text-sm cursor-pointer copyable" data-copy="+92-21-9920 2777 , +92-21-9923 2733">
+                            +92-21-9920 2777  <br> +92-21-9923 2733
                         </p>
                     </div>
                     <div class="flex items-center space-x-3">
