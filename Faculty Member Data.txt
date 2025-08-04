@@ -91,8 +91,8 @@ Create a Button: Show More(href="#")
 Dr. Salman Ahmed Khan:-
 Designation: Section Head (Cyber Security)
 Education: PhD
-Email: info@kinpoe.edu.pk
-Research Area: Nano Science, Nanotechnology
+Email: salman.khan@kinpoe.edu.pk
+Research Area: Mechatronics, Cyber Security
 Publications:- 
 1. A Facile, Cost Effective, Patterned ZnO Microwires Synthesis for Large-Scale Fabrication of Piezoelectric-Generator.
 Create a Button: Show More(href="#")
@@ -140,7 +140,7 @@ Dr. Naila Zareen:-
 Designation: Section Head (Laboratories)
 Education: PhD (Electrical Power Engineering) - UTM, Malaysia.
 Email: dr.naila.zareen@paec.gov.pk
-Research Area: Smart Grid, Demand Side Management, Distributed Generation, Regulated & Dereglated Power System, Electrical Vehicle
+Research Area: DEAR Lab, Demand Side Management, Distributed Generation, Regulated & Dereglated Power System, Electrical Vehicle
 Publications:-
 1. A review of optimum DG placement based on minimization of power losses and voltage stability enhancement of distribution system. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:_kc_bZDykSQC")
 2. Grey wolf optimizer based placement and sizing of multiple distributed generation in the distribution system. (href="https://scholar.google.com/citations?view_op=view_citation&hl=en&user=klEVmXwAAAAJ&citation_for_view=klEVmXwAAAAJ:4TOpqqG69KYC")
@@ -150,9 +150,50 @@ Publications:-
 Create a Button: Show More(href="https://scholar.google.com/citations?hl=en&user=klEVmXwAAAAJ")
 
 Mazhar Ali:-
-Designation: Section Head (PDTP)
-Education: Not Avalible for Now.
+Designation: Section Head (ISS)
+Education: Master of Sciences(NPE).
+Email: mazhar.ali@kinpoe.edu.pk
+Research Area: Computational fluid dynamics analysis, process Engineering 
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Muhammad Faizan Mansoor:-
+Designation: Lab Coordinator
+Education: Master of Sciences(NPE).
+Email: m.faizan@kinpoe.edu.pk
+Research Area: Structural and Fatigue Analysis, Robotics
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Syed Muhammad Haris:-
+Designation: Section Head (QA)
+Education: Master of Sciences(NPE).
+Email: syed.haris@kinpoe.edu.pk
+Research Area: Artificial Intelligence, Robotics, Structural Analysis, Computational Fluid Dynamics
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Syed Khawar Hussain:-
+Designation: Section Head (QTP)
+Education: Master of Sciences(NPE).
 Email: Not Avalible for Now.
+Research Area: Materials Engineering, Fracture mechanics, Welding, Heat Treatment, Nano Materials, Physical Metallurgy, fabrication of Materials, Degradation and Corrosion, Nuclear Reactor Materials, Microscopy of Materials
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Muhammad Junaid ur Rehman:-
+Designation: Section Head (ORIC)
+Education: Master of Sciences(NPE).
+Email: Muhammad.junaid@paec.gov.pk
+Research Area: Micro structural Modifications, Heat treatment, NDT, Fracture Mechanics, Ageing Assessments
+Publications: Not Avalible for Now.
+Create a Button: Show More(href="#")
+
+Akbar Abbas:-
+Designation: Section Head (Programs)
+Education: MS(Physics)
+Email: Akbar.abbas@kinpoe.edu.pk
+Research Area: Computational Condensed Matter Physics (Density Functional Theory)
 Publications: Not Avalible for Now.
 Create a Button: Show More(href="#")
 
