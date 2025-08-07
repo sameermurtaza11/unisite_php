@@ -142,24 +142,19 @@ function validatePDTPEligibility($form_data, $deadline_date) {
 // Save PDTP form data to database
 function savePDTPFormData($user, $form_data, $current_step, $program_key) {
     try {
-        // Initialize database connection
+        // Initialize database connection with better error handling
         $database = new Database();
         $pdo = $database->connect();
         
         if (!$pdo) {
-            return ['success' => false, 'error' => 'Database connection failed'];
+            error_log("Database PDO connection is null");
+            return ['success' => false, 'error' => 'Database connection failed - PDO is null'];
         }
         
         // Prepare form data for database storage
         $user_id = $user['id'];
-        $program_id = ($program_key === 'pdtp') ? 1 : null; // Assuming PDTP has program_id 1
         
-        // Extract and sanitize form data
-        $name = htmlspecialchars($form_data['name'] ?? '', ENT_QUOTES);
-        $father_name = htmlspecialchars($form_data['father_name'] ?? '', ENT_QUOTES);
-        $cnic = htmlspecialchars($form_data['cnic'] ?? '', ENT_QUOTES);
-        $phone = htmlspecialchars($form_data['phone'] ?? '', ENT_QUOTES);
-        $email = htmlspecialchars($form_data['email'] ?? '', ENT_QUOTES);
+        // Extract and sanitize form data matching the actual table structure
         $date_of_birth = $form_data['date_of_birth'] ?? null;
         $address = htmlspecialchars($form_data['address'] ?? '', ENT_QUOTES);
         $gender = htmlspecialchars($form_data['gender'] ?? '', ENT_QUOTES);
@@ -173,52 +168,76 @@ function savePDTPFormData($user, $form_data, $current_step, $program_key) {
         $degree_cgpa = floatval($form_data['degree_cgpa'] ?? 0);
         $appearing_degree = isset($form_data['appearing_degree']) ? 1 : 0;
         
+        // DAE specific fields
+        $dae_field = htmlspecialchars($form_data['dae_field'] ?? '', ENT_QUOTES);
+        $dae_institute = htmlspecialchars($form_data['dae_institute'] ?? '', ENT_QUOTES);
+        $dae_marks = floatval($form_data['dae_marks'] ?? 0);
+        $appearing_dae = isset($form_data['appearing_dae']) ? 1 : 0;
+        
+        // B.Sc specific fields
+        $bsc_institute = htmlspecialchars($form_data['bsc_institute'] ?? '', ENT_QUOTES);
+        
         // Subjects as JSON
         $subjects = json_encode($form_data['subjects'] ?? []);
         
-        // Documents data as JSON
-        $documents_data = json_encode($form_data['documents'] ?? []);
+        // Professional experience
+        $job_title = htmlspecialchars($form_data['job_title'] ?? '', ENT_QUOTES);
+        $organization = htmlspecialchars($form_data['organization'] ?? '', ENT_QUOTES);
+        $experience_years = htmlspecialchars($form_data['experience_years'] ?? '', ENT_QUOTES);
+        $industry = htmlspecialchars($form_data['industry'] ?? '', ENT_QUOTES);
+        $motivation = htmlspecialchars($form_data['motivation'] ?? '', ENT_QUOTES);
         
-        // Additional info
-        $emergency_contact = htmlspecialchars($form_data['emergency_contact'] ?? '', ENT_QUOTES);
-        $emergency_phone = htmlspecialchars($form_data['emergency_phone'] ?? '', ENT_QUOTES);
-        $additional_info = htmlspecialchars($form_data['additional_info'] ?? '', ENT_QUOTES);
+        // Generate application ID if not exists
+        $application_id = 'PDTP' . str_pad($user_id, 4, '0', STR_PAD_LEFT) . date('Y');
         
-        // Insert or update application record
+        // Check if application already exists
+        $checkStmt = $pdo->prepare("SELECT application_id FROM pdtp_applications WHERE user_id = ? AND program_key = ?");
+        $checkStmt->execute([$user_id, $program_key]);
+        $existingApp = $checkStmt->fetch();
+        
+        if ($existingApp) {
+            // Use existing application_id for updates
+            $application_id = $existingApp['application_id'];
+        }
+        
+        // Insert or update application record using correct table structure
         $sql = "INSERT INTO pdtp_applications (
-            user_id, program_id, current_step, status,
-            name, father_name, cnic, phone, email, date_of_birth, address, gender,
-            qualification_option, ssc_marks, hsc_marks, degree_type, degree_marks, degree_cgpa, appearing_degree, subjects,
-            documents_data, emergency_contact, emergency_phone, additional_info,
+            user_id, application_id, program_key, current_step, status,
+            date_of_birth, gender, address,
+            qualification_option, dae_field, dae_institute, dae_marks, appearing_dae,
+            degree_type, bsc_institute, subjects, hsc_marks, degree_marks, degree_cgpa, appearing_degree, ssc_marks,
+            job_title, organization, experience_years, industry, motivation,
             created_at, updated_at
         ) VALUES (
-            ?, ?, ?, 'draft',
+            ?, ?, ?, ?, 'draft',
+            ?, ?, ?,
+            ?, ?, ?, ?, ?,
             ?, ?, ?, ?, ?, ?, ?, ?,
-            ?, ?, ?, ?, ?, ?, ?, ?,
-            ?, ?, ?, ?,
+            ?, ?, ?, ?, ?,
             NOW(), NOW()
         ) ON DUPLICATE KEY UPDATE
-            current_step = VALUES(current_step),
-            name = VALUES(name),
-            father_name = VALUES(father_name),
-            cnic = VALUES(cnic),
-            phone = VALUES(phone),
-            email = VALUES(email),
-            date_of_birth = VALUES(date_of_birth),
-            address = VALUES(address),
-            gender = VALUES(gender),
-            qualification_option = VALUES(qualification_option),
-            ssc_marks = VALUES(ssc_marks),
-            hsc_marks = VALUES(hsc_marks),
-            degree_type = VALUES(degree_type),
-            degree_marks = VALUES(degree_marks),
-            degree_cgpa = VALUES(degree_cgpa),
-            appearing_degree = VALUES(appearing_degree),
-            subjects = VALUES(subjects),
-            documents_data = VALUES(documents_data),
-            emergency_contact = VALUES(emergency_contact),
-            emergency_phone = VALUES(emergency_phone),
-            additional_info = VALUES(additional_info),
+            current_step = ?,
+            date_of_birth = ?,
+            gender = ?,
+            address = ?,
+            qualification_option = ?,
+            dae_field = ?,
+            dae_institute = ?,
+            dae_marks = ?,
+            appearing_dae = ?,
+            degree_type = ?,
+            bsc_institute = ?,
+            subjects = ?,
+            hsc_marks = ?,
+            degree_marks = ?,
+            degree_cgpa = ?,
+            appearing_degree = ?,
+            ssc_marks = ?,
+            job_title = ?,
+            organization = ?,
+            experience_years = ?,
+            industry = ?,
+            motivation = ?,
             updated_at = NOW()";
         
         $stmt = $pdo->prepare($sql);
@@ -228,10 +247,18 @@ function savePDTPFormData($user, $form_data, $current_step, $program_key) {
         }
         
         $result = $stmt->execute([
-            $user_id, $program_id, $current_step,
-            $name, $father_name, $cnic, $phone, $email, $date_of_birth, $address, $gender,
-            $qualification_option, $ssc_marks, $hsc_marks, $degree_type, $degree_marks, $degree_cgpa, $appearing_degree, $subjects,
-            $documents_data, $emergency_contact, $emergency_phone, $additional_info
+            // INSERT values
+            $user_id, $application_id, $program_key, $current_step,
+            $date_of_birth, $gender, $address,
+            $qualification_option, $dae_field, $dae_institute, $dae_marks, $appearing_dae,
+            $degree_type, $bsc_institute, $subjects, $hsc_marks, $degree_marks, $degree_cgpa, $appearing_degree, $ssc_marks,
+            $job_title, $organization, $experience_years, $industry, $motivation,
+            // UPDATE values (duplicate parameters for ON DUPLICATE KEY UPDATE)
+            $current_step,
+            $date_of_birth, $gender, $address,
+            $qualification_option, $dae_field, $dae_institute, $dae_marks, $appearing_dae,
+            $degree_type, $bsc_institute, $subjects, $hsc_marks, $degree_marks, $degree_cgpa, $appearing_degree, $ssc_marks,
+            $job_title, $organization, $experience_years, $industry, $motivation
         ]);
         
         if ($result) {
@@ -242,6 +269,9 @@ function savePDTPFormData($user, $form_data, $current_step, $program_key) {
         }
         
     } catch (Exception $e) {
+        // Log the detailed error for debugging
+        error_log("savePDTPFormData error: " . $e->getMessage());
+        error_log("Stack trace: " . $e->getTraceAsString());
         return ['success' => false, 'error' => 'Exception occurred: ' . $e->getMessage()];
     }
 }

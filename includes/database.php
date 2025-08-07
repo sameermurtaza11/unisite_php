@@ -8,25 +8,44 @@ class Database {
     private $pdo;
 
     public function __construct() {
-        $config = include_once __DIR__ . '/../config.php';
-        
-        // Validate config to prevent errors
-        if (!is_array($config)) {
-            throw new Exception('Failed to load database configuration');
-        }
-        
-        // Validate required config keys
-        $required_keys = ['db_host', 'db_name', 'db_user', 'db_pass'];
-        foreach ($required_keys as $key) {
-            if (!array_key_exists($key, $config)) {
-                throw new Exception("Missing required config key: $key");
+        try {
+            // Check if config file exists
+            $config_path = __DIR__ . '/../config.php';
+            if (!file_exists($config_path)) {
+                throw new Exception('Database configuration file not found at: ' . $config_path);
             }
+            
+            // Load configuration
+            $config = include $config_path;
+            
+            // Validate config to prevent errors
+            if (!is_array($config)) {
+                throw new Exception('Failed to load database configuration - config.php must return an array');
+            }
+            
+            // Validate required config keys
+            $required_keys = ['db_host', 'db_name', 'db_user', 'db_pass'];
+            $missing_keys = [];
+            foreach ($required_keys as $key) {
+                if (!array_key_exists($key, $config)) {
+                    $missing_keys[] = $key;
+                }
+            }
+            
+            if (!empty($missing_keys)) {
+                throw new Exception("Missing required config keys: " . implode(', ', $missing_keys));
+            }
+            
+            $this->host = $config['db_host'];
+            $this->db_name = $config['db_name'];
+            $this->username = $config['db_user'];
+            $this->password = $config['db_pass'];
+            
+        } catch (Exception $e) {
+            // Log the actual error for debugging
+            error_log("Database configuration error: " . $e->getMessage());
+            throw new Exception('Failed to load database configuration: ' . $e->getMessage());
         }
-        
-        $this->host = $config['db_host'];
-        $this->db_name = $config['db_name'];
-        $this->username = $config['db_user'];
-        $this->password = $config['db_pass'];
     }
 
     public function connect() {
