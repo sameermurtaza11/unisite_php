@@ -3,25 +3,25 @@
     currentSlide: 0,
     slides: [
         {
-            image: 'static/media/Photos/hero_1.jpg',
-            title: '50 years in Pursuit of Excellence in Nuclear Education, Research & Training',
+            image: 'static/media/0001.jpg',
+            title: 'Excellence in Power Engineering Education',
             subtitle: 'Affiliated with Pakistan Institute of Engineering and Applied Sciences (PIEAS)',
             cta: 'Explore Programs'
         },
         {
-            image: 'static/media/Photos/hero_2.jpg',
+            image: 'static/media/0003.jpg',
             title: 'State-of-the-Art Research Facilities',
             subtitle: 'Leading innovation in power and energy systems',
             cta: 'View Research'
         },
         {
-            image: 'static/media/Photos/hero_3.jpg',
+            image: 'static/media/0005.jpg',
             title: 'Advanced Engineering Programs',
             subtitle: 'MS, PDTP, PGTP, and CSR programs available',
             cta: 'Apply Now'
         },
         {
-            image: 'static/media/Photos/hero_4.jpg',
+            image: 'static/media/research_lab.jpg',
             title: 'Shaping Future Engineers',
             subtitle: 'Join our community of successful graduates',
             cta: 'Learn More'

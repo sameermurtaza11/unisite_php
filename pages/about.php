@@ -1,106 +1,38 @@
-<!--
-  about.php
-  Main About page for KINPOE website.
-  Contains: Hero, Institute Overview, Vision/Mission, Director Message, Faculty Grid, Modal, Campus Info, Affiliations, Call to Action.
-  Author: KINPOE Web Team
--->
 <!-- Hero Section -->
 <section class="relative py-20 bg-gradient-to-r from-kinpoe-blue to-kinpoe-light-blue text-white">
-    <!-- Hero Section: Institute branding and intro -->
     <div class="container mx-auto px-4">
         <div class="text-center">
             <h1 class="text-5xl font-bold mb-6">About KINPOE</h1>
-            <p class="text-xl text-blue-100 max-w-3xl mx-auto">Empowering the Future of Energy Through Excellence in Engineering Education</p>
+            <p class="text-xl text-blue-100 max-w-3xl mx-auto">
+                To empower graduates in such a manner that they may lead progress in the nuclear industry.
+            </p>
         </div>
     </div>
 </section>
 
 <!-- Institute Overview -->
 <section class="py-16 bg-white">
-    <!-- Institute Overview: History, Timeline, Stats -->
     <div class="container mx-auto px-4">
-        <h2 class="text-4xl font-bold text-kinpoe-blue mb-6 text-center">Our Institution</h2>
-        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-top">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <!-- Timeline Section -->
-                <div class="">
-                    <div class="flex flex-col gap-6">
-                        <h1 class="text-2xl font-bold text-kinpoe-blue mb-6 text-center">Our Legacy in Progress</h1>
-                        <!-- 1973 -->
-                        <div class="flex flex-col items-center w-full">
-                            <div class="flex items-center w-full mb-2">
-                                <div class="flex-grow border-t border-gray-300"></div>
-                                <span class="mx-4 text-lg font-bold text-red-600"> 1973 </span>
-                                <div class="flex-grow border-t border-gray-300"></div>
-                            </div>
-                            <div class="bg-white rounded-lg shadow p-4 w-full">
-                                <div class="font-semibold text-kinpoe-blue mb-1">Establishment of Karachi Nuclear Power Training Centre (KNPTC)</div>
-                                <ul class="list-disc ml-5 text-gray-600 text-sm">
-                                    <li>Post Graduate Training Program (PGTP) for Engineers/Scientists</li>
-                                    <li>Post Diploma Training Program (PDTP) for Technicians</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 1993 -->
-                        <div class="flex flex-col items-center w-full">
-                            <div class="flex items-center w-full mb-2">
-                                <div class="flex-grow border-t border-gray-300"></div>
-                                <span class="mx-4 text-lg font-bold text-gray-700"> 1993 </span>
-                                <div class="flex-grow border-t border-gray-300"></div>
-                            </div>
-                            <div class="bg-white rounded-lg shadow p-4 w-full">
-                                <div class="font-semibold text-kinpoe-blue mb-1">Upgraded to KANUPP Institute of Nuclear Power Engineering (KINPOE)</div>
-                                <ul class="list-disc ml-5 text-gray-600 text-sm">
-                                    <li>Launched 2-year MS in Nuclear Power Engineering</li>
-                                    <li>Initially affiliated with NED University, later PIEAS</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 2019-2020 -->
-                        <div class="flex flex-col items-center w-full">
-                            <div class="flex items-center w-full mb-2">
-                                <div class="flex-grow border-t border-gray-300"></div>
-                                <span class="mx-4 text-base font-bold text-green-700"> 2019-20 </span>
-                                <div class="flex-grow border-t border-gray-300"></div>
-                            </div>
-                            <div class="bg-white rounded-lg shadow p-4 w-full">
-                                <div class="font-semibold text-kinpoe-blue mb-1">Became constituent college of PIEAS for MS (NPE)</div>
-                                <ul class="list-disc ml-5 text-gray-600 text-sm">
-                                    <li>Took over O&M of Full-Scope Training Simulator</li>
-                                    <li>Assigned training of KNPGS Licensed Operators, Maintenance, and Technical staff</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- 2025 -->
-                        <div class="flex flex-col items-center w-full">
-                            <div class="flex items-center w-full mb-2">
-                                <div class="flex-grow border-t border-gray-300"></div>
-                                <span class="mx-4 text-lg font-bold text-orange-500"> 2025 </span>
-                                <div class="flex-grow border-t border-gray-300"></div>
-                            </div>
-                            <div class="bg-white rounded-lg shadow p-4 w-full">
-                                <div class="font-semibold text-kinpoe-blue mb-1">Recent Milestones</div>
-                                <ul class="list-disc ml-5 text-gray-600 text-sm">
-                                    <li>Launched first batch of Skill Development and Junior Nuclear Leadership Development Programs</li>
-                                    <li>Integrated C-Series Soft Panel (Educational-Cum-Training) Simulator in MS (NPE) curriculum</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="relative">
-                <img src="static/media/Photos/Gallery/kinpoe_view.jpg" alt="KINPOE Building" class="rounded-lg shadow-lg w-full">
-
-                <!-- Overlay Box -->
-                <div class="absolute h-min inset-0 bg-gradient-to-b from-white to-transparent flex items-top justify-center pt-5 pb-20 px-6 rounded-lg shadow-lg">
-                    <p class="text-lg text-justify text-gray-700 leading-relaxed sm:text-base">
-                        <!-- <strong class="block text-2xl text-kinpoe-blue font-bold mb-4">Our Institution</strong> -->
-                        Karachi Institute of Power Engineering (KINPOE) has a rich legacy of developing qualified professionals in nuclear power technology. Affiliated with PIEAS for MS (Nuclear Power Engineering), KINPOE was previously affiliated with NED University. The institute has evolved from its origins as KNPTC, consistently advancing nuclear education and training in Pakistan.
-                    </p>
-                </div>
-                <!-- Stats -->
-                <div class="grid grid-cols-2 gap-6 mt-14">
+                <h2 class="text-4xl font-bold text-kinpoe-blue mb-6">Our Institution</h2>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Karachi Institute of Power Engineering (KINPOE) has been established to develop qualified manpower
+                    in Nuclear Power Technology. <br><br>
+                    KINPOE is affiliated with Pakistan Institute of Engineering and Applied Sciences for the award of
+                    Master of Science degree in Nuclear Power, previously it was affiliated with NED University of
+                    Engineering and Technology Karachi to award Master of Engineering Degree in Nuclear Power
+                    Engineering.
+                </p>
+                <p class="text-lg text-gray-600 mb-6 leading-relaxed">
+                    Initially, KINPOE functioned as the Karachi Nuclear Power Training Centre (KNPTC). For the first two
+                    decades, KNPTC organized one-year post-graduate training program for engineers & technicians
+                    essentially for the operation and maintenance of KANUPP. The academic programs of KNPTC underwent
+                    many revisions to increase emphasis on developing better analytical and design skills.
+                    In 1993, the masters degree program in the field of nuclear power engineering was started; KINPOE is
+                    uniquely qualified for this program.
+                </p>
+                <div class="grid grid-cols-2 gap-6">
                     <div class="text-center">
                         <div class="text-3xl font-bold text-kinpoe-blue">2000+</div>
                         <div class="text-gray-600">Graduates</div>
@@ -111,17 +43,15 @@
                     </div>
                 </div>
             </div>
-            <!-- <div>
-                <img src="static/media/Photos/Gallery/kinpoe_view.jpg" alt="KINPOE Building" class="rounded-lg shadow-lg w-full">
-            </div> -->
+            <div>
+                <img src="static/media/kinpoe_building.jpg" alt="KINPOE Building" class="rounded-lg shadow-lg w-full">
+            </div>
         </div>
     </div>
 </section>
 
 <!-- Vision, Mission & Director Message  -->
 <section class="py-16 bg-gray-100">
-    <!-- Vision, Mission & Director Message Section -->
-    <!-- Faculty Section: Grid and Modal -->
     <div class="container mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
             <!-- Our Vision -->
@@ -149,7 +79,7 @@
         <div class="flex justify-center items-center w-full mt-10">
             <div class="bg-white rounded-xl shadow-lg p-8 flex flex-col md:flex-row items-center w-full mx-auto">
                 <div class="flex-shrink-0 flex items-center justify-center mb-6 md:mb-0 md:mr-8">
-                    <img src="static/media/Photos/dir_msg.jpg" alt="Director"
+                    <img src="static/media/profile_icon.png" alt="Director"
                         class="w-32 h-32 rounded-full shadow-lg object-cover">
                 </div>
                 <div>
@@ -179,7 +109,143 @@
     </div>
 </section>
 
-<?php include('partials/faculty-section.php'); ?>
+<!-- Faculty Section -->
+<section class="py-16 bg-white">
+    <div class="container mx-auto px-4">
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-kinpoe-blue mb-4">Our Faculty</h2>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                Meet our distinguished faculty members who bring years of experience and expertise to our programs
+            </p>
+        </div>
+
+        <!-- Row 1: Director -->
+        <div class="grid grid-cols-1 gap-8 mb-8 justify-items-center">
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col md:flex-row items-center px-8 py-16">
+                <img src="static/media/profile_icon.png" alt="Dr. Muhammad Ahmed" class="w-32 h-32 rounded-full shadow-lg object-cover mb-4 md:mb-0 md:mr-8">
+                <div class="flex flex-col items-center ">
+                    <h3 class="text-2xl font-bold text-kinpoe-blue mb-2">Syed Perwaiz Asdaque</h3>
+                    <p class="text-kinpoe-gold font-semibold mb-2">Director</p>
+                    <p class="text-gray-600 text-sm mb-2">Ph.D. in Power Systems Engineering</p>
+                    <div class="flex flex-wrap gap-2 text-xs">
+                        <span class="bg-kinpoe-blue text-white px-2 py-1 rounded">Smart Grids</span>
+                        <span class="bg-kinpoe-gold text-white px-2 py-1 rounded">Renewable Integration</span>
+                        <span class="bg-gray-200 text-kinpoe-blue px-2 py-1 rounded">Energy Policy</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Row 2: 3 Faculty -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-6">
+                <img src="static/media/ZAS.png" alt="Zafer Ahmed Siddiqui" class="w-24 h-24 rounded-full shadow mb-3">
+                <h3 class="text-lg font-bold text-kinpoe-blue mb-1">Zafer Ahmed Siddiqui</h3>
+                <p class="text-kinpoe-gold font-semibold mb-1">Registrar (KINPOE-C)</p>
+                <!-- <p class="text-gray-600 text-xs mb-2">Power Electronics, Motor Drives</p> -->
+                <div class="flex flex-wrap gap-1 text-xs">
+                    <span class="bg-kinpoe-blue text-white px-2 py-0.5 rounded">Energy Plaining</span>
+                    <span class="bg-gray-200 text-kinpoe-blue px-2 py-0.5 rounded">Technical Report Wrinting</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-6">
+                <img src="static/media/DRA.png" alt="Dr. Rizwan Ahmed" class="w-24 h-24 rounded-full shadow mb-3">
+                <h3 class="text-lg font-bold text-kinpoe-blue mb-1">Dr. Rizwan Ahmed</h3>
+                <p class="text-kinpoe-gold font-semibold mb-1">Manager (ORIC)</p>
+                <!-- <p class="text-gray-600 text-xs mb-2">Sustainable Energy, Efficiency</p> -->
+                <div class="flex flex-wrap gap-1 text-xs">
+                    <span class="bg-kinpoe-blue text-white px-2 py-0.5 rounded">Reactor Physics</span>
+                    <span class="bg-gray-200 text-kinpoe-blue px-2 py-0.5 rounded">Fuel Management</span>
+                </div>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-6">
+                <img src="static/media/MAAK.png" alt="M. Arif Abdul Karim" class="w-24 h-24 rounded-full shadow mb-3">
+                <h3 class="text-lg font-bold text-kinpoe-blue mb-1">Muhammad Arif Abdul Karim</h3>
+                <p class="text-kinpoe-gold font-semibold mb-1">Professor</p>
+                <!-- <p class="text-gray-600 text-xs mb-2">Nuclear Safety, Instrumentation</p> -->
+                <div class="flex flex-wrap gap-1 text-xs">
+                    <span class="bg-kinpoe-blue text-white px-2 py-0.5 rounded">Operational Aspects of NPP</span>
+                    <span class="bg-gray-200 text-kinpoe-blue px-2 py-0.5 rounded">Instrumentation</span>
+                </div>
+            </div>
+        </div>
+        <!-- Row 3: 5 Compact Faculty -->
+        <div class="grid grid-cols-2 mb-8 sm:grid-cols-3 md:grid-cols-5 gap-6">
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/profile_icon.png" alt="Dr. Nadeem Ahsan" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Nadeem Ahsan</h3>
+                <p class="text-xs text-kinpoe-gold">Manager (IT&CS)</p>
+                <span class="text-xs text-gray-500">Area of Research1</span>
+                <span class="text-xs text-gray-500">Area of Research2</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/DJAB.png" alt="Dr. Jawed Akhtar Bhutto" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Jawed Akhtar Bhutto</h3>
+                <p class="text-xs text-kinpoe-gold">Manager (Quality Assurance)</p>
+                <span class="text-xs text-gray-500">Power Engineering & Control Engineering</span>
+                <span class="text-xs text-gray-500">Power Engineering & Control Engineering</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/profile_icon.png" alt="Atiq ur Rehman" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Atiq ur Rehman</h3>
+                <p class="text-xs text-kinpoe-gold">Manager (BT)</p>
+                <span class="text-xs text-gray-500">Area of Research1</span>
+                <span class="text-xs text-gray-500">Area of Research2</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/DARA.png" alt="Dr. Abdul Rehman Abbasi" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Abdul Rehman Abbasi</h3>
+                <p class="text-xs text-kinpoe-gold">Manager (Academics)</p>
+                <span class="text-xs text-gray-500">Robotics & Machine Vision for Nuclear Safety</span>
+                <span class="text-xs text-gray-500">Robotics & Machine Vision for Nuclear Safety</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/Profile_icon.png" alt="Dr. Zahra Ali" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Zahra Ali</h3>
+                <p class="text-xs text-kinpoe-gold">Designation</p>
+                <span class="text-xs text-gray-500">Nuclear Modeling & Software Tools</span>
+                <span class="text-xs text-gray-500">Plasma & Fusion Systems</span>
+            </div>
+        </div>
+        <!-- Row 4: 5 Compact Faculty -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8">
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/profile_icon.png" alt="Dr. Salman Ahmed" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Salman Ahmed Khan</h3>
+                <p class="text-xs text-kinpoe-gold">Section Head (Cyber Security)</p>
+                <span class="text-xs text-gray-500">Nanoscience</span>
+                <span class="text-xs text-gray-500">Nanotechnology</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/DKK.png" alt="Dr. Khurram Kafeel" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Khurram Kafeel</h3>
+                <p class="text-xs text-kinpoe-gold">Section Head (C&PC)</p>
+                <span class="text-xs text-gray-500">CFD in Nuclear Safety</span>
+                <span class="text-xs text-gray-500">BEPU in Accident Analysis</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/DAA.png" alt="Dr. Adeel Abbas" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Adeel Abbas</h3>
+                <p class="text-xs text-kinpoe-gold">Professor</p>
+                <span class="text-xs text-gray-500">Microgrids - Demand Side Management</span>
+                <span class="text-xs text-gray-500">Microgrids - Demand Side Management</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/profile_icon.png" alt="Dr. Naveen Masood" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Naveen Masood</h3>
+                <p class="text-xs text-kinpoe-gold">Section Head (IT)</p>
+                <span class="text-xs text-gray-500">Area of Research1</span>
+                <span class="text-xs text-gray-500">Area of Research2</span>
+            </div>
+            <div class="bg-white rounded-xl shadow-2xl flex flex-col items-center p-4">
+                <img src="static/media/Profile_icon.png" alt="Dr. Naila Zareen" class="w-16 h-16 rounded-full shadow mb-2">
+                <h3 class="text-base font-bold text-kinpoe-blue">Dr. Naila Zareen</h3>
+                <p class="text-xs text-kinpoe-gold">Section Head (Laboratories)</p>
+                <span class="text-xs text-gray-500">Grid Automation & AI Integration</span>
+                <span class="text-xs text-gray-500">Machine Vision for NSS</span>
+            </div>
+        </div>
+    </div>
+</section>
 
 <!-- Campus Info -->
 <section class="py-16 bg-gray-100">
@@ -191,7 +257,7 @@
 
         <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-                <img src="static/media/Photos/Gallery/kinpoe_view.jpg" alt="Campus Aerial View" class="rounded-lg shadow-lg w-full">
+                <img src="static/media/kinpoe_building.jpg" alt="Campus Aerial View" class="rounded-lg shadow-lg w-full">
             </div>
             <div>
                 <h3 class="text-3xl font-bold text-kinpoe-blue mb-6">Modern Campus Facilities</h3>
@@ -297,7 +363,6 @@
 
 <!-- Call to Action -->
 <section class="py-16 bg-kinpoe-blue text-white">
-    <!-- Call to Action Section -->
     <div class="container mx-auto px-4 text-center">
         <h2 class="text-4xl font-bold mb-4">Join Our Community</h2>
         <p class="text-xl mb-8 text-blue-100">

@@ -4,9 +4,9 @@ $feedbackMsg = '';
 try {
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['qec_feedback'])) {
         // DB connection
-        $conn = @new mysqli('localhost', 'root', '', 'kinpoe_db');
+        $conn = @new mysqli('localhost', 'root', '', 'unisite_pdp_dp');
         if ($conn->connect_error) {
-            $feedbackMsg = '<span class="text-red-600">Database connection failed. Please ensure the database <b>kinpoe_dbexists.</span>';
+            $feedbackMsg = '<span class="text-red-600">Database connection failed. Please ensure the database <b>unisite_pdp_dp</b> exists.</span>';
         } else {
             // Sanitize inputs
             $name = trim($conn->real_escape_string($_POST['name'] ?? ''));
@@ -102,17 +102,16 @@ try {
     <div class="container mx-auto px-4">
         <h2 class="text-2xl font-bold text-kinpoe-blue mb-6">Useful Links & Downloads</h2>
         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
-            <li><a href="static/media/PDFs/sample1.pdf" class="text-blue-700 hover:underline" download>Sample Paper 1 (MS Program)</a></li>
-            <li><a href="static/media/PDFs/pdtp_program_samplepaper.pdf" class="text-blue-700 hover:underline" download>Sample Paper (PDTP Program)</a></li>
-            <li><a href="static/media/PDFs/sample3.pdf" class="text-blue-700 hover:underline" download>Sample Paper 3 (PGTP Program)</a></li>
-            <li><a href="static/media/PDFs/sample4.pdf" class="text-blue-700 hover:underline" download>Sample Paper 4 (CSR Program)</a></li>
-            <li><a href="static/media/PDFs/ms_program_brochure.pdf" class="text-blue-700 hover:underline" download>Brochure (MS Program)</a></li>
-            <li><a href="static/media/PDFs/pdtp_program_brochure.pdf" class="text-blue-700 hover:underline" download>Brochure (PDTP Program)</a></li>
-            <li><a href="static/media/PDFs/pdtp_program_applicationform.pdf" class="text-blue-700 hover:underline" download>Application Form & Admit Card (PDTP Program)</a></li>
-            <li><a href="static/media/PDFs/pgtp_program_brochure.pdf" class="text-blue-700 hover:underline" download>Brochure (PGTP Program)</a></li>
-            <li><a href="static/media/PDFs/csr_program_brochure.pdf" class="text-blue-700 hover:underline" download>Brochure (CSR Program)</a></li>
-            <li><a href="static/media/PDFs/sample9.pdf" class="text-blue-700 hover:underline" download>Prospectus</a></li>
-            <li><a href="static/media/PDFs/sample10.pdf" class="text-blue-700 hover:underline" download>Fee Structure</a></li>
+            <li><a href="static/media/sample1.pdf" class="text-blue-700 hover:underline" download>Sample Paper 1 (MS Program)</a></li>
+            <li><a href="static/media/sample2.pdf" class="text-blue-700 hover:underline" download>Sample Paper 2 (PDTP Program)</a></li>
+            <li><a href="static/media/sample3.pdf" class="text-blue-700 hover:underline" download>Sample Paper 3 (PGTP Program)</a></li>
+            <li><a href="static/media/sample4.pdf" class="text-blue-700 hover:underline" download>Sample Paper 4 (CSR Program)</a></li>
+            <li><a href="static/media/sample5.pdf" class="text-blue-700 hover:underline" download>Application Form (MS Program)</a></li>
+            <li><a href="static/media/sample6.pdf" class="text-blue-700 hover:underline" download>Application Form (PDTP Program)</a></li>
+            <li><a href="static/media/sample7.pdf" class="text-blue-700 hover:underline" download>Application Form (PGTP Program)</a></li>
+            <li><a href="static/media/sample8.pdf" class="text-blue-700 hover:underline" download>Application Form (CSR Program)</a></li>
+            <li><a href="static/media/sample9.pdf" class="text-blue-700 hover:underline" download>Prospectus</a></li>
+            <li><a href="static/media/sample10.pdf" class="text-blue-700 hover:underline" download>Fee Structure</a></li>
         </ul>
     </div>
 </section>
