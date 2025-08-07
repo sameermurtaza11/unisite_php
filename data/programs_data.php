@@ -1,0 +1,53 @@
+<?php
+// Program data - Pure data file with no HTML output
+$programs = [
+    [
+        'key' => 'ms',
+        'title' => 'MS in Nuclear Power Engineering',
+        'type' => 'graduate',
+        'available_from' => '2025-08-05',
+        'deadline' => '2025-08-12',
+        'duration' => '2 Years',
+        'eligibility' => "Bachelor's in Engineering/Science",
+        'degree' => 'MS-NPE from PIEAS',
+        'desc' => 'Two-year PIEAS-accredited MS program offered at KINPOE, covering design, construction, and operation of nuclear power plants. Includes a 7-week zero semester and five 14-week semesters. Fellowship provided.',
+        'brochure' => 'static/media/PDFs/ms_program_brochure.pdf',
+    ],
+    [
+        'key' => 'pdtp',
+        'title' => 'Post Diploma Training Program',
+        'type' => 'training',
+        'available_from' => '2025-01-01',
+        'deadline' => '2025-12-31',
+        'duration' => '1 Year',
+        'eligibility' => 'DAE or B.Sc. (Science)',
+        'degree' => 'PDTP Certificate',
+        'desc' => 'One-year technical training for DAE holders and science graduates in nuclear plant operations. Includes classroom, labs, and site visits. Fellowship and hostel provided. Conducted at KINPOE & CHASCENT.',
+        'brochure' => 'static/media/PDFs/pdtp_program_brochure.pdf',
+    ],
+    [
+        'key' => 'pgtp',
+        'title' => 'Post Graduate Training Program',
+        'type' => 'training',
+        'available_from' => '2020-01-01',
+        'deadline' => '2020-03-31',
+        'duration' => '1 Year',
+        'eligibility' => "Bachelor's in Engineering",
+        'degree' => 'Post-Graduate Certificate',
+        'desc' => 'Joint KINPOE & CHASCENT program for engineers. Includes 6-week orientation, 2 semesters of academic training, followed by plant visits and on-job training. Prepares for nuclear facility operations.',
+        'brochure' => 'static/media/PDFs/pgtp_program_brochure.pdf',
+    ],
+    [
+        'key' => 'csr',
+        'title' => 'Corporate Social Responsibility',
+        'type' => 'professional',
+        'available_from' => '2025-08-05',
+        'deadline' => '2025-08-12',
+        'duration' => '2 Months',
+        'eligibility' => 'Matriculation',
+        'degree' => 'CSR Skill Certificate',
+        'desc' => 'Empowering the people residing around KNPGS Site through vocational training in employable areas. The course content is as per national qualifications provided by NAVTTC, and will provide quality training.',
+        'brochure' => 'static/media/PDFs/csr_program_brochure.pdf',
+    ],
+];
+?>

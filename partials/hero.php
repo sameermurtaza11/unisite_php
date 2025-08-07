@@ -3,25 +3,25 @@
     currentSlide: 0,
     slides: [
         {
-            image: 'static/media/0001.jpg',
-            title: 'Excellence in Power Engineering Education',
+            image: 'static/media/Photos/hero_1.jpg',
+            title: '50 years in Pursuit of Excellence in Nuclear Education, Research & Training',
             subtitle: 'Affiliated with Pakistan Institute of Engineering and Applied Sciences (PIEAS)',
             cta: 'Explore Programs'
         },
         {
-            image: 'static/media/0003.jpg',
+            image: 'static/media/Photos/hero_2.jpg',
             title: 'State-of-the-Art Research Facilities',
             subtitle: 'Leading innovation in power and energy systems',
             cta: 'View Research'
         },
         {
-            image: 'static/media/0005.jpg',
+            image: 'static/media/Photos/hero_3.jpg',
             title: 'Advanced Engineering Programs',
             subtitle: 'MS, PDTP, PGTP, and CSR programs available',
             cta: 'Apply Now'
         },
         {
-            image: 'static/media/research_lab.jpg',
+            image: 'static/media/Photos/hero_4.jpg',
             title: 'Shaping Future Engineers',
             subtitle: 'Join our community of successful graduates',
             cta: 'Learn More'
@@ -47,7 +47,7 @@
                         text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl"></h1>
                     <p x-text="slide.subtitle"
                         class="mb-8 text-sm sm:text-base md:text-lg lg:text-xl xl:text-xl text-gray-200"></p>
-                    <a :href="index === 0 ? 'index.php?content_file=pages/programs.php' : index === 1 ? 'index.php?content_file=pages/research.php' : index === 2 ? 'index.php?content_file=pages/apply.php' : 'index.php?content_file=pages/contact.php'"
+                    <a :href="index === 0 ? 'index.php?content_file=pages/programs.php' : index === 1 ? 'index.php?content_file=pages/research.php' : index === 2 ? 'index.php?content_file=partials/login.php' : 'index.php?content_file=pages/contact.php'"
                         class="inline-block bg-kinpoe-gold hover:bg-yellow-600 text-white font-bold
                         py-2 px-5 sm:py-2.5 sm:px-6 md:py-3 md:px-7 lg:py-3 lg:px-8 xl:py-3 xl:px-10
                         rounded-lg text-sm sm:text-base md:text-lg lg:text-lg transition-all duration-300 transform hover:scale-105">

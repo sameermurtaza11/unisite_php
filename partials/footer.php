@@ -31,7 +31,7 @@
                 <ul class="space-y-2">
                     <li><a href="index.php?content_file=pages/resources.php" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm">Resources</a></li>
                     <li><a href="index.php?content_file=pages/qec.php" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm">QEC</a></li>
-                    <li><a href="index.php?content_file=pages/apply.php" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm">Apply Now</a></li>
+                    <li><a href="index.php?content_file=partials/login.php" class="text-gray-300 hover:text-white transition-colors duration-200 text-sm">Apply Now</a></li>
                 </ul>
             </div>
 
@@ -52,8 +52,8 @@
                     </div>
                     <div class="flex items-center space-x-3">
                         <i class="fas fa-phone text-kinpoe-gold"></i>
-                        <p class="text-gray-300 text-sm cursor-pointer copyable" data-copy="+92-21-9920 2777 ext: 2701, +92-21-9923 2733">
-                            +92-21-9920 2777 ext: 2701 <br> +92-21-9923 2733
+                        <p class="text-gray-300 text-sm cursor-pointer copyable" data-copy="+92-21-9920 2777 , +92-21-9923 2733">
+                            +92-21-9920 2777  <br> +92-21-9923 2733
                         </p>
                     </div>
                     <div class="flex items-center space-x-3">
@@ -71,11 +71,11 @@
         <!-- Bottom Bar -->
         <div class="border-t border-gray-600 mt-4 pt-4 flex flex-col md:flex-row md:justify-between items-center">
             <p class="text-gray-300 text-sm">
-                © 2024 Karachi Institute of Power Engineering (KINPOE). All rights reserved. |
+                © 2025 Karachi Institute of Power Engineering (KINPOE). All rights reserved. |
                 <a href="#" class="hover:text-white transition-colors duration-200">Privacy Policy</a> |
                 <a href="#" class="hover:text-white transition-colors duration-200">Terms of Service</a>
             </p>
-            <p class="text-xs text-gray-400 md:text-right text-center">
+            <p class="text-sm font-semibold text-gray-400 md:text-right text-center">
                 Developed by
                 <a href="https://github.com/sameermurtaza11" target="_blank" rel="noopener"
                     class="hover:text-kinpoe-gold underline">Sameer Murtaza</a>
