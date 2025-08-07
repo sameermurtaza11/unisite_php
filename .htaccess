@@ -1,0 +1,25 @@
+# .htaccess - Security hardening for Unisite PHP
+
+# 1. Disable directory indexing
+Options -Indexes
+
+
+# 2. Deny access to .git and other hidden files (works for most Apache setups)
+RedirectMatch 404 /.git
+
+# 3. Disable DEBUG HTTP verb (not supported in .htaccess, needs server config)
+# (Cannot be set here, see Apache config)
+
+# 5. Set X-Frame-Options header (defense in depth, also set in PHP)
+<IfModule mod_headers.c>
+    Header always set X-Frame-Options "DENY"
+</IfModule>
+RewriteEngine On
+RewriteBase /unisite_php/
+
+# If the requested file/directory doesn't exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all requests to index.php
+RewriteRule ^(.*)$ index.php [QSA,L]

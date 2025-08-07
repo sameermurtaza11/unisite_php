@@ -148,7 +148,7 @@ This project is a complete modern rebuild of the KINPOE (Karachi Institute of Po
 // config.php
 $config = [
     'db_host' => 'localhost',
-    'db_name' => 'database_name',
+    'db_name' => 'kinpoe_db',
     'db_user' => 'your_username',
     'db_pass' => 'your_password'
 ];
@@ -288,4 +288,3 @@ For questions, issues, contributions, or technical support regarding the KINPOE 
 ## Development Status: Production Ready ✅
 
 This documentation covers the complete structure, setup, features, and customization options for the KINPOE website rebuild. The system is fully functional with comprehensive application management, user authentication, and database integration. For implementation details, see code comments and individual module documentation.
-
